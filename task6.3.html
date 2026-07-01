@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 30%;
+            min-width: 250px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        th, td {
+            border: 1px solid #bbb;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ddd;
+        }
+        ul, ol {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        .category-header {
+            background-color: #ddd;
+            padding: 5px;
+            font-weight: bold;
+            border: 1px solid #bbb;
+            margin-top: 5px;
+        }
+        .definition-box {
+            border: 1px solid #bbb;
+            margin-bottom: 10px;
+        }
+        .definition-title {
+            background-color: #ddd;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .definition-desc {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Task 1 -->
+    <div class="card">
+        <h3>Task 1: Project Overview</h3>
+        <table>
+            <tr>
+                <th>Project Phase</th>
+                <th>Key Steps</th>
+            </tr>
+            <tr>
+                <td>1. Planning</td>
+                <td>Define Goals</td>
+            </tr>
+            <tr>
+                <td>2. Development</td>
+                <td>Build Features</td>
+            </tr>
+            <tr>
+                <td>3. Testing</td>
+                <td>Conduct Testing</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Task 2 -->
+    <div class="card">
+        <h3>Task 2: Daily Schedule</h3>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td>1. Check Emails</td>
+            </tr>
+            <tr>
+                <td>10:30 AM</td>
+                <td>2. Team Meeting</td>
+            </tr>
+            <tr>
+                <td>2:00 PM</td>
+                <td>3. Work on Tasks</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Task 3 -->
+    <div class="card">
+        <h3>Task 3: Shopping List with Categories</h3>
+        <div style="border: 1px solid #bbb; padding: 5px; background: #ddd; font-weight: bold; text-align: center;">
+            Shopping Categories
+        </div>
+        <div class="category-header">Fruits</div>
+        <div style="border: 1px solid #bbb; padding: 5px;">
+            <ol>
+                <li>Apples</li>
+                <li>Bananas</li>
+            </ol>
+        </div>
+        <div class="category-header">Snacks</div>
+        <div style="border: 1px solid #bbb; padding: 5px;">
+            <ol>
+                <li>Chips</li>
+                <li>Cookies</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Task 4 -->
+    <div class="card">
+        <h3>Task 4: Employee Details</h3>
+        <table>
+            <tr>
+                <th>Attribute</th>
+                <th>Information</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>John Doe</td>
+            </tr>
+            <tr>
+                <td>Skills</td>
+                <td>
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Task 5 -->
+    <div class="card">
+        <h3>Task 5: Term Definitions</h3>
+        <div class="definition-box">
+            <div class="definition-title">HTML</div>
+            <div class="definition-desc">Hypertext Markup Language</div>
+        </div>
+        <div class="definition-box">
+            <div class="definition-title">CSS</div>
+            <div class="definition-desc">Cascading Style Sheets</div>
+        </div>
+    </div>
+
+</div>
+<hr>
+<table border="1" cellpadding="10" cellspacing="0">
+        <!-- Main Title Header -->
+        <tr>
+            <th colspan="3">Company Department Overview</th>
+        </tr>
+        
+        <!-- Table Column Headers -->
+        <tr>
+            <th>Department</th>
+            <th>Team Members</th>
+            <th>Details</th>
+        </tr>
+
+        <!-- Development Row -->
+        <tr>
+            <td><strong>Development</strong></td>
+            <td>
+                <ol>
+                    <li>John</li>
+                    <li>Maria</li>
+                    <li>Alex</li>
+                </ol>
+            </td>
+            <td>
+                <ul>
+                    <li>Focus: Web Application Development</li>
+                    <li>Tools: HTML, CSS, JavaScript, Django</li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- Design Row -->
+        <tr>
+            <td><strong>Design</strong></td>
+            <td>
+                <ul>
+                    <li>Sophie</li>
+                    <li>David</li>
+                </ul>
+            </td>
+            <td>
+                <!-- Nested Table for Tasks -->
+                <table border="1" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <th>Task</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>UI Mockups</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>UX Testing</td>
+                        <td>In Progress</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Marketing Row -->
+        <tr>
+            <td><strong>Marketing</strong></td>
+            <td>
+                <ul>
+                    <li>Emma</li>
+                    <li>Chris</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Campaigns:
+                        <ul>
+                            <li>Social Media, Email Outreach</li>
+                        </ul>
+                    </li>
+                    <li>Goal:
+                        <ul>
+                            <li>Increase brand visibility</li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

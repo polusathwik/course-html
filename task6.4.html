@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Milestone Tracker</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+        }
+        th {
+            background-color: #d3d3d3;
+        }
+        .header-row {
+            background-color: #d3d3d3;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <!-- Main Header -->
+    <tr class="header-row">
+        <td colspan="4">Project Milestone Tracker</td>
+    </tr>
+    
+    <!-- Column Headers -->
+    <tr>
+        <th>Phase</th>
+        <th>Task</th>
+        <th>Team Members</th>
+        <th>Status</th>
+    </tr>
+    
+    <!-- Phase 1 -->
+    <tr>
+        <td rowspan="2">Phase 1</td>
+        <td>Research & Planning</td>
+        <td>Alice, Bob</td>
+        <td>Completed</td>
+    </tr>
+    <tr>
+        <td>Initial Design</td>
+        <td>Charlie</td>
+        <td>In Progress</td>
+    </tr>
+    
+    <!-- Phase 2 Header Row -->
+    <tr>
+        <td rowspan="3">Phase 2</td>
+        <td colspan="2" class="header-row">Development Tasks</td>
+        <td rowspan="3">Ongoing</td>
+    </tr>
+    <tr>
+        <td>Frontend Coding</td>
+        <td>Maria, John</td>
+    </tr>
+    <tr>
+        <td>Backend Integration</td>
+        <td>Alex</td>
+    </tr>
+    
+    <!-- Phase 3 -->
+    <tr>
+        <td rowspan="3">Phase 3</td>
+        <td rowspan="3">Testing & QA</td>
+        <td>Testing Team, IT Support</td>
+        <td>Pending</td>
+    </tr>
+    <tr>
+        <td>- Bug Fixing</td>
+        <td rowspan="2">Scheduled</td>
+    </tr>
+    <tr>
+        <td>- Final Testing</td>
+    </tr>
+    
+    <!-- Launch & Review Section -->
+    <tr class="header-row">
+        <td colspan="4">Launch & Review</td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align: center;">Entire Team</td>
+        <td>Upcoming</td>
+    </tr>
+</table>
+
+</body>
+</html>
